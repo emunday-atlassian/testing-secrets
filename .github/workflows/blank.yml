@@ -34,7 +34,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         env:
-          MY_VARIABLE: ${{ env.MY_VARIABLE }}
+          MY_VARIABLE: ${{ vars.MY_VARIABLE }}
         run: echo Hello, world! $MY_VARIABLE
 
       # Runs a set of commands using the runners shell
